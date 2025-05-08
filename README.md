@@ -1,4 +1,4 @@
-##🪪 Generador de Credenciales de Evento
+## 🪪 Generador de Credenciales de Evento
 
 - Estudiante(s):
 David Frías – Patrones de Diseño (Sección 2)
@@ -9,7 +9,7 @@ José Méndez – Patrones de Diseño (Sección 2)
 
 Este sistema permite emitir credenciales personalizadas para un evento, a partir de una plantilla clonable. Se aplican los patrones de diseño Prototype (para clonar credenciales) y Singleton (para configuración global del evento).
 
-###🚀 Cómo ejecutar
+### 🚀 Cómo ejecutar
 ----
 1. Clonar el repositorio:
 ```
@@ -23,7 +23,7 @@ java app.Main
 ```
 ----
 
-###🧬 Patrón Prototype – Aplicación
+### 🧬 Patrón Prototype – Aplicación
 ----
 `Prototype` implementa `cloneable` en la clase Credencial creando una plantilla que podremos utilizar par agregar los datos del usuario.
 
@@ -42,7 +42,7 @@ nueva.setRut(oScanner.nextLine());
 gestor.agregarCredencial(nueva);
 System.out.println("✅ Credencial creada correctamente.");
 ```
-###🔒 Patrón Singleton – Aplicación
+### 🔒 Patrón Singleton – Aplicación
 ----
 `Singleton` contiene:
 - Atributo que contiene una única instancia.
@@ -53,7 +53,7 @@ System.out.println("✅ Credencial creada correctamente.");
 GestorCredenciales gestor = GestorCredenciales.getInstancia();
 ```
 
-###🖥️ Menú por consola
+### 🖥️ Menú por consola
 ----
 ```
 --- Menu ---
@@ -63,10 +63,10 @@ GestorCredenciales gestor = GestorCredenciales.getInstancia();
 Elige una opcion:
 ```
 
-###📊 Diagrama de Clases (UML)
+### 📊 Diagrama de Clases (UML)
 ----
-https://github.com/0bamium/PatronesDeDise-o/blob/main/DiagramaDeClases.png
+![Diagrama de Clases](DiagramaDeClases.png)
 
-###📸 Captura del sistema funcionando
+### 📸 Captura del sistema funcionando
 ----
-https://github.com/0bamium/PatronesDeDise-o/blob/main/funcionandoProyecto.jpg
+![Proyecto en Funcionamiento](funcionandoProyecto.jpg)
